@@ -45,9 +45,8 @@ def cpu_freq() -> Panel:
     return Panel(text, expand=False, highlight=True, title="[bold blue]CPU Freq")
 
 def main() -> None:
-    panels = []
+    panels = [cpu_temp()]
 
-    panels.append(cpu_temp())
     panels.append(cpu_freq())
 
     for panel in panels:
